@@ -1,3 +1,4 @@
+AI Chatbot Application (MERN Stack + Generative AI)
 Tech Stack: React.js, Node.js, Express.js, MongoDB, OpenAI React SDK, Google Gemini API, ImageKit, Stripe (Payment Gateway)
 
 Designed and developed a full-stack AI Chatbot application similar to ChatGPT and Google Gemini using the MERN stack.
