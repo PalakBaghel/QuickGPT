@@ -2,6 +2,7 @@ import axios from "axios";
 import Chat from "../models/Chat.js";
 import openai from "../configs/openai.js";
 import imagekit from "../configs/imageKit.js";
+import User from "../models/User.js";
 
 
 //Text based AI Chat Message Controller
@@ -37,7 +38,7 @@ export const textMessageController = async (req, res) => {
 
         await User.updateOne({ _id: userId }, { $inc: { credits: -1 } })
 
-        res.json({ succes: true, reply })
+        res.json({ success: true, reply })
 
     } catch (error) {
         return res.json({ success: false, message: error.message })
